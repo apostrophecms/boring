@@ -1,0 +1,27 @@
+{
+  "name": "boring",
+  "version": "0.1.0",
+  "description": "A minimalist command line option parser.",
+  "main": "boring.js",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/punkave/boring"
+  },
+  "keywords": [
+    "minimalist",
+    "command",
+    "line",
+    "options",
+    "argv",
+    "boring"
+  ],
+  "author": "P'unk Avenue LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/punkave/boring/issues"
+  },
+  "homepage": "https://github.com/punkave/boring"
+}
