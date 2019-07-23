@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/punkave/boring"
+    "url": "https://github.com/apostrophecms/boring"
   },
   "keywords": [
     "minimalist",
@@ -21,9 +21,9 @@
   "author": "P'unk Avenue LLC",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/punkave/boring/issues"
+    "url": "https://github.com/apostrophecms/boring/issues"
   },
-  "homepage": "https://github.com/punkave/boring",
+  "homepage": "https://github.com/apostrophecms/boring",
   "devDependencies": {
     "mocha": "^6.2.0"
   }
