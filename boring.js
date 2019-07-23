@@ -1,11 +1,10 @@
 module.exports = function() {
-  var args = process.argv.slice(2);
-  var result = {
+  const args = process.argv.slice(2);
+  const result = {
     _: []
   };
-  var i;
-  for (i = 0; (i < args.length); i++) {
-    var matches = args[i].match(/^--(\S+)=(.*)$/);
+  for (let i = 0; (i < args.length); i++) {
+    let matches = args[i].match(/^--([^\s\=]+)=(.*)$/);
     if (matches) {
       result[matches[1]] = matches[2];
       continue;

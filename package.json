@@ -1,6 +1,6 @@
 {
   "name": "boring",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A minimalist command line option parser.",
   "main": "boring.js",
   "scripts": {
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/punkave/boring/issues"
   },
-  "homepage": "https://github.com/punkave/boring"
+  "homepage": "https://github.com/punkave/boring",
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
 }
