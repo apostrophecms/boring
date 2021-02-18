@@ -1,10 +1,10 @@
-# boring
+# `boring`
 
 <a href="http://apostrophecms.org/"><img src="https://raw.github.com/apostrophecms/boring/master/logos/logo-box-madefor.png" align="right" /></a>
 
 A command line argument parser without pirates
 
-## what you get
+## What you get with `boring`
 
 When someone types:
 
@@ -28,10 +28,44 @@ Notice that parameters without `--`, if any, go into the `_` array. Parameters w
 ## How you get it
 
 ```javascript
-const argv = require('boring')();
+const argv = require('boring')({});
 ```
 
-## What you don't get
+The options object is optional.
+
+## Options
+
+### Passthrough
+
+It is a common convention to never treat any arguments that appear after a `--` placeholder (by itself) as named options, even if they start with `--`.
+
+Instead, the remainder are treated as positional arguments, no matter what.
+
+To get this behavior with `boring`, pass the `end` option, with a value of `--`:
+
+```javascript
+const argv = require('boring')({
+  end: '--'
+});
+console.log(argv);
+```
+
+Now, when you run this command:
+
+```bash
+node app hello --pretty -- --boring
+```
+
+You will get:
+
+```javascript
+{
+  _: [ 'hello', '--boring' ],
+  pretty: true
+}
+```
+
+## What you don't get with `boring`
 
 ### Single hyphens: nope
 

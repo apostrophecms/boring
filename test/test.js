@@ -60,4 +60,21 @@ describe('boring', function() {
       }
     }
   });
+  it('treats arguments after an end marker as positional, even if they start with --', function() {
+    process.argv = [ 'ignore', 'ignore', 'hello', '--pretty', '--', '--boring' ];
+    const argv = require('../boring.js')({ end: '--' });
+    assert(argv.pretty === true);
+    assert(argv._.length === 2);
+    assert(argv._[0] === 'hello');
+    assert(argv._[1] === '--boring');
+  });
+  it('does not respect end markers if the end option is not used', function() {
+    process.argv = [ 'ignore', 'ignore', 'hello', '--pretty', '--', '--boring' ];
+    const argv = require('../boring.js')();
+    assert(argv.boring === true);
+    assert(argv.pretty === true);
+    assert(argv._.length === 2);
+    assert(argv._[0] === 'hello');
+    assert(argv._[1] === '--');
+  });
 });

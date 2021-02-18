@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+Added the `end` option, which can be used to indicate that no more named options should be parsed after a certain marker is encountered, and all remaining arguments should be captured in `argv._`, even if they begin with `--`. The end marker itself is not captured.
+
 ## 1.0.0
 
 Official stable release, four years after the "0.1.0" release, which was... well... boring and stable in its own right.
