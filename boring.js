@@ -6,7 +6,7 @@ module.exports = function(options) {
   };
   let optionsEnded = false;
   for (let i = 0; (i < args.length); i++) {
-    if (options.end && (args[i] === options.end)) {
+    if (options.end && (args[i] === '--')) {
       optionsEnded = true;
       continue;
     }

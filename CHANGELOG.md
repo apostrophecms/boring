@@ -2,7 +2,7 @@
 
 ## 1.1.0
 
-Added the `end` option, which can be used to indicate that no more named options should be parsed after a certain marker is encountered, and all remaining arguments should be captured in `argv._`, even if they begin with `--`. The end marker itself is not captured.
+Added the `end` option, which can be used to indicate that no more named options should be parsed after `--` is encountered, and all remaining arguments should be captured in `argv._`, even if they begin with `--`. The `--` itself is not captured.
 
 ## 1.0.0
 

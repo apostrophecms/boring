@@ -62,7 +62,7 @@ describe('boring', function() {
   });
   it('treats arguments after an end marker as positional, even if they start with --', function() {
     process.argv = [ 'ignore', 'ignore', 'hello', '--pretty', '--', '--boring' ];
-    const argv = require('../boring.js')({ end: '--' });
+    const argv = require('../boring.js')({ end: true });
     assert(argv.pretty === true);
     assert(argv._.length === 2);
     assert(argv._[0] === 'hello');
