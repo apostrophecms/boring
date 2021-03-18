@@ -1,18 +1,18 @@
 # Boring
 
-<a href="http://apostrophecms.org/"><img src="https://raw.github.com/apostrophecms/boring/master/logos/logo-box-madefor.png" align="right" /></a>
+<a href="https://apostrophecms.com/"><img src="https://raw.github.com/apostrophecms/boring/master/logos/logo-box-madefor.png" align="right" alt="Made for ApostropheCMS"/></a>
 
 A command line argument parser without pirates
 
 ## What you get with Boring
 
-When someone types:
+Input:
 
 ```
 node app jump sideways --foo --bar=whee --super-cool=totally
 ```
 
-You get:
+Response:
 
 ```javascript
 {
