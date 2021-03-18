@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+* Edits project metadata and README.
+
 ## 1.1.0
 
 Added the `end` option, which can be used to indicate that no more named options should be parsed after `--` is encountered, and all remaining arguments should be captured in `argv._`, even if they begin with `--`. The `--` itself is not captured.

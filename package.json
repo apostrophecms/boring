@@ -1,6 +1,6 @@
 {
   "name": "boring",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A minimalist command line option parser.",
   "main": "boring.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "argv",
     "boring"
   ],
-  "author": "P'unk Avenue LLC",
+  "author": "Apostrophe Technologies, Inc.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/apostrophecms/boring/issues"
